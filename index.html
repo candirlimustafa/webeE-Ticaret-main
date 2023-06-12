@@ -15,11 +15,17 @@
     <style>
         @import url("css/all.css");
     </style>
+    <link rel="stylesheet" href="css/custom/style.css" />
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/custom/extra.css">
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
 </head>
 
 <body id="page-body">
+    
     
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
         
@@ -52,34 +58,86 @@
             <li class="nav-item"><a href="#about" class="nav-link">Ürünler</a></li>
             <li class="nav-item"><a href="#projects" class="nav-link">MKM Ticaret</a></li>
             <li class="nav-item"><a href="#contact" class="nav-link">İletişim</a></li>
-            
+            <header class="header">
+                <nav class="nav">
+                  <button class="button" id="form-open">Giriş Yap</button>
+                </nav>
+              </header>
         </ul>
         </div>
         </div>
+        
     </div>
+    
     </nav>
+     
 
     
 
     <header class="backImage text-white text-center">
         <div class="container">
-            <div>
-                <button class="accordion">Section 1</button>
-                <div class="accopanel">
-                  <p>Bölüm 1</p>
-                </div>
-              
-                <button class="accordion">Section 2</button>
-                <div class="accopanel">
-                  <p>Bölüm 2</p>
-                </div>
-              </div>
+            
             <div class="backImage-sub mb-4">Hoş Geldin! Tanıştığımıza Memnun Olduk</div>
             <div class="backImage-heading text-uppercase">Bir ürün al ve ticarete başlayalım!</div>
             <a href="#about" class="btn btn-danger btn-lg p-lg-4 text-uppercase fw-bolder">Ürünler Burada!</a>
         </div>
     </header>
+<!-- Home -->
+<section class="home">
+    <div class="form_container">
+      <i class="uil uil-times form_close"></i>
+      <!-- Login From -->
+      <div class="form login_form">
+        <form action="#">
+          <h2>Giriş Yap</h2>
 
+          <div class="input_box">
+            <input type="email" placeholder="Email giriniz" required />
+            <i class="uil uil-envelope-alt email"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Şifre giriniz" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+
+          <button class="button">Giriş Yap</button>
+
+          <div class="login_signup">
+            Henüz hesabın yok mu? <a href="#" id="signup">Kaydol</a>
+          </div>
+        </form>
+      </div>
+
+      <!-- Signup From -->
+      <div class="form signup_form">
+        <form action="#">
+          <h2>Kaydol</h2>
+
+          <div class="input_box">
+            <input type="email" placeholder="Email giriniz" required />
+            <i class="uil uil-envelope-alt email"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Şifre oluştur" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+          <div class="input_box">
+            <input type="password" placeholder="Şifreyi onayla" required />
+            <i class="uil uil-lock password"></i>
+            <i class="uil uil-eye-slash pw_hide"></i>
+          </div>
+
+          <button class="button">Kaydol</button>
+
+          <div class="login_signup">
+            Zaten hesabın var mı? <a href="#" id="login">Giriş Yap</a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
     
 
     <section  id="about" class="py-5">
@@ -469,7 +527,7 @@
         </div>
     </section>
         
-
+    <script src="js/custom/script.js"></script>
 
     <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="js/custom/extra.js"></script>
