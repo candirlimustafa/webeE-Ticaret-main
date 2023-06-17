@@ -24,6 +24,21 @@ header.backImage .backImage-heading {
 
 }
 
+/* Style buttons */
+.btnsepet {
+  background-color: #7d2ae8; /* Blue background */
+  border: none; /* Remove borders */
+  border-radius: 20px;
+  color: white; /* White text */
+  padding: 10px 14px; /* Some padding */
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: rgb(220, 222, 230);
+}
 
 #mainNavbar {
     padding-top: 1rem;
