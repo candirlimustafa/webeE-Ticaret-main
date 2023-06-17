@@ -28,9 +28,10 @@ header.backImage .backImage-heading {
 .btnsepet {
   background-color: #7d2ae8; /* Blue background */
   border: none; /* Remove borders */
-  border-radius: 20px;
+  border-radius: 7px;
   color: white; /* White text */
   padding: 10px 14px; /* Some padding */
+  margin-left: 14px;
   font-size: 16px; /* Set a font size */
   cursor: pointer; /* Mouse pointer on hover */
 }
