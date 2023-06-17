@@ -104,9 +104,6 @@
                 <form action="#">
                     <h2>Kaydol</h2>
                     <div class="input_box">
-                        <input placeholder="Mağaza adı" required />
-                    </div>
-                    <div class="input_box">
                         <input type="email" placeholder="Email giriniz" required />
                         <i class="uil uil-envelope-alt email"></i>
                     </div>
@@ -115,7 +112,10 @@
                         <i class="uil uil-lock password"></i>
                         <i class="uil uil-eye-slash pw_hide2"></i>
                     </div>
-                    <button class="button">Kaydol</button>
+                    <div class="input_box">
+                        <input type="password" placeholder="Mağaza adı" required />
+                    </div>
+                    <button class="button" onclick="alert('Kayıt Başarılı');">Kaydol</button>
                     <div class="login_signup2">
                         Zaten hesabın var mı? <a href="#" id="login2">Giriş Yap</a>
                     </div>
@@ -276,7 +276,7 @@
                         </div>
                         <!-- Product actions-->
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="alert('Sepete eklendi.');">Sepete ekle</a></div>
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" onclick="alert('Sepete eklendi.');">Sepete ekle</a></div>>
                         </div>
                     </div>
                 </div>
