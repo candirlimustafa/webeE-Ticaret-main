@@ -41,6 +41,23 @@ header.backImage .backImage-heading {
   background-color: rgb(220, 222, 230);
 }
 
+/* Style buttons */
+.btnout {
+  background-color: #7d2ae8; /* Blue background */
+  border: none; /* Remove borders */
+  border-radius: 7px;
+  color: white; /* White text */
+  padding: 10px 14px; /* Some padding */
+  margin-left: 14px;
+  font-size: 16px; /* Set a font size */
+  cursor: pointer; /* Mouse pointer on hover */
+}
+
+/* Darker background on mouse-over */
+.btnout:hover {
+  background-color: rgb(220, 222, 230);
+}
+
 #mainNavbar {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -196,6 +213,7 @@ ol, ul {
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
 }
+
 
 
 
@@ -510,10 +528,6 @@ address {
   line-height: inherit;
 }
 
-ol,
-ul {
-  /*padding-left: 2rem;*/
-}
 
 ol,
 ul,

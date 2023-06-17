@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="MKM TİCARET">
+    <meta name="description" content="web tasarım ve pazarlama">
+    <meta name="keywords" content="web,tasarım,dizayn,programlama,yazılım,geliştirme">
+    <link href="img/favicon.png" rel="icon">
+    <link href="img/favicon.png" rel="favicon-icon">
+    <title>MKM TİCARET</title>
+
+    <style>
+        @import url("css/all.css");
+    </style>
+    <link rel="stylesheet" href="css/custom/style.css" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom/extra.css">
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+</head>
+
+<body id="page-body">
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNavbar">
+        
+    <div class="container">
+        
+        <a href="#page-body" class="navbar-brand text-uppercase" title="MKM website link">MKM Ticaret</a>
+
+        
+        <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas"
+        data-bs-target="#myNavbar" 
+            aria-controls="myNavbar" aria-label="Menü butonu" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="myNavbar" aria-labelledby="myLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="myLabel">Menü</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+            aria-label="Kapat"></button> 
+        </div>
+    </div>
+    <form>
+
+</form>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 text-uppercase ms-auto
+            py-lg-2">
+            <button onclick="window.location.href='index.html'" class="btnout">Çıkış Yap</button>
+
+        </ul>
+        </div>
+        </div>
+        
+    </div>
+    
+    </nav>
+     
+
+    <header class="backImage text-white text-center">
+        <div class="container">
+            
+            <div class="backImage-sub mb-4">Hoş Geldin! Tanıştığımıza Memnun Olduk</div>
+            <div class="backImage-heading text-uppercase">Ürünlerini yükle ve para kazanmaya başla!!</div>
+            <a href="#about" class="btn btn-danger btn-lg p-lg-4 text-uppercase fw-bolder">Ürün Ekle!</a>
+        </div>
+    </header>
+
+    <body>
+        
+        <section id="about" class="yonetici">
+            
+            <div class="container">
+                <div class="text-center mb-5">
+                    <h2 class="s-heading text-uppercase fw-bold text-white">Ürün Ekle</h2>
+                </div>
+                <form id="FrmContact" novalidate>
+                    <div class="row align-items-stretch mb-5">
+                        <div class="col-md-6">
+                            <div class="form-floating mb-4">
+                                <input type="text" id="name" class="form-control" placeholder="Ürün Adı" required>
+                                <label for="name">Ürün Adı</label>
+                                <div class="invalid-feedback" id="ErrName"></div>
+                            </div>
+                            <div class="form-floating mb-4">
+                                <input type="kategori" id="kategori" class="form-control" placeholder="kategori" required>
+                                <label for="email">Ürün kategori</label>
+                                <div class="invalid-feedback" id="ErrEmail"></div>
+                            </div>
+                            <div class="form-floating mb-4">
+                                <input type="price" id="price" class="form-control" placeholder="Fiyat" required>
+                                <label for="phone">Fiyat</label>
+                                <div class="invalid-feedback" id="ErrPhone"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-floating form-textarea mb-md-0">
+                                <textarea id="message" class="form-control" placeholder="Mesajınız" required></textarea>
+                                <label for="message">Açıklama</label>
+                                <div class="invalid-feedback" id="ErrMessage"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-danger btn-lg text-uppercase py-3">
+                            Ürün Ekle
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        
+    <section  id="" class="py-5">
+        <div class="text-center mb-5">
+            <h2 class="s-heading text-uppercase fw-bold">ÜRÜNLERİN</h2>
+    
+        </div>
+        <div class="container">
+        <div class="row">
+        <div class="col-md-2">
+            <div class="container">
+                <ul class="accordion-menu">
+                    <li class="link">
+                        <div class="dropdown">
+                            <i class="fa-brands fa-python"></i> 
+                            Bilgisayar
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <ul class="submenuItems">
+                            <li><a href="#">Masaüstü</a></li>
+                            <li><a href="#">Dizüstü</a></li>
+                        </ul>
+                    </li>
+                    <li class="link">
+                        <div class="dropdown">
+                            <i class="fa-brands fa-node-js"></i> 
+                            Telefon
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <ul class="submenuItems">
+                            <li><a href="#">Cep Telefonu</a></li>
+                            <li><a href="#">Aksesuar</a></li>
+                        </ul>
+                    </li>
+                    <li class="link">
+                        <div class="dropdown">
+                            <i class="fa-brands fa-react"></i> 
+                            TV
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <ul class="submenuItems">
+                            <li><a href="#">Televizyon</a></li>
+                            <li><a href="#">Sinema sistemi</a></li>
+                        </ul>
+                    </li>
+                    <li class="link">
+                        <div class="dropdown">
+                            <i class="fa-brands fa-bootstrap"></i> 
+                            Kamera
+                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                        </div>
+                        <ul class="submenuItems">
+                            <li><a href="#">Drone</a></li>
+                            <li><a href="#">Aksiyon</a></li>
+                            <li><a href="#">SLR</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-10">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Ürün 1</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                </div>
+                                <!-- Product price-->
+                                99,90TL
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Düzenle</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Ürün 2</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                </div>
+                                <!-- Product price-->
+                                99,90TL
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Düzenle</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Ürün 3</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                </div>
+                                <!-- Product price-->
+                                99,90TL
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Düzenle</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder">Ürün 4</h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                </div>
+                                <!-- Product price-->
+                                99,90TL
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Düzenle</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    </section>
+
+            
+        <script src="js/custom/script.js"></script>
+    
+        <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
+        <script src="js/custom/extra.js"></script>
+    </body>
