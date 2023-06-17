@@ -1,9 +1,9 @@
 document.addEventListener("DOMContentLoaded", function() {
     // Product data
     var products = [
-      { name: "Product 1", price: 10 },
-      { name: "Product 2", price: 20 },
-      { name: "Product 3", price: 30 }
+      { name: "MSI TITAN GT77", price: 194999.00 },
+      { name: "Samsung Galaxy S23 Ultra", price: 49999.90 },
+      { name: "Samsung Galaxy Watch5 Pro", price: 8999 }
       // Add more products here
     ];
     
@@ -29,16 +29,13 @@ document.addEventListener("DOMContentLoaded", function() {
       
       var quantity = document.createElement("span");
       quantity.className = "quantity";
-      quantity.textContent = "0";
+      quantity.textContent = "1";
       
       var plusBtn = document.createElement("button");
       plusBtn.className = "btn btn-sm btn-secondary plus-btn";
       plusBtn.textContent = "+";
       
       productDetails.appendChild(productName);
-      quantityContainer.appendChild(minusBtn);
-      quantityContainer.appendChild(quantity);
-      quantityContainer.appendChild(plusBtn);
       
       
       //listItem.appendChild(productDetails);
@@ -48,6 +45,9 @@ document.addEventListener("DOMContentLoaded", function() {
       price.textContent = product.price.toFixed(2) + "TL";
       
       quantityContainer.appendChild(price);
+      quantityContainer.appendChild(minusBtn);
+      quantityContainer.appendChild(quantity);
+      quantityContainer.appendChild(plusBtn);
       productDetails.appendChild(quantityContainer);
 
       listItem.appendChild(productDetails);
